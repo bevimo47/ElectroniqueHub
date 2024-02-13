@@ -1,2 +1,2 @@
 # ElectroniqueHub
-A repository for my ElectronicHub Website
+Electronic Gadgets and Accessories
