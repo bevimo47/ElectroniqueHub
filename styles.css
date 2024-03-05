@@ -73,6 +73,33 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+/* Additional Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    max-width: 100%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.active {
+    background-color: #717171;
+}
 
 
 
