@@ -1,4 +1,5 @@
 /* Global Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,18 +9,22 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav ul li a {
@@ -27,78 +32,91 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
 section {
     padding: 20px;
 }
 
-/* Slideshow */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Home Page Slideshow */
+
 .slideshow-container {
     position: relative;
-    max-width: 100%;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .mySlides {
     display: none;
 }
 
-.mySlides img {
-    width: 100%;
-    height: auto;
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-/* Dots */
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.active {
-    background-color: #717171;
-}
+/* Product Section */
 
-/* Products */
 .product {
-    border: 1px solid #ccc;
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
     padding: 10px;
-    margin-bottom: 20px;
+    border: 1px solid #ccc;
 }
 
 .product img {
     width: 100%;
-    height: auto;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+.product h3 {
+    margin-top: 10px;
 }
 
-/* Mission Statement */
-h3 {
-    text-align: center;
-    margin-top: 30px;
-    color: #333;
+.product p {
+    margin: 5px 0;
 }
 
-/* Contact */
-#contact ul {
-    list-style-type: none;
-    padding: 0;
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-#contact ul li {
-    margin-bottom:
+.product button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .product {
+        width: 100%;
+    }
+}
+
 
 
